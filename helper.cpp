@@ -20,7 +20,6 @@ int search_file (char* lz4_directory, char* file_format)
     std::string path;
     int result; 
     path = "/home/aladdin/Desktop/BMTI_aufgabe"; //lz4_directory 
-    const std::string term = "core.*.lz4"; 
 
     // Define a regular expression pattern to match the desired file format
     std::regex file_pattern("core\\.[A-Za-z]+\\.[0-9A-Fa-f]+(\\.[0-9A-Fa-f]+)*\\.lz4");
@@ -51,7 +50,11 @@ int search_file (char* lz4_directory, char* file_format)
 
 
 
-void collect_data (char* source_directory){}
+void collect_data (char* source_directory)
+{
+    path = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect"; //source_directory 
+    std::system("ls -l >test.txt");
+}
 void compress_data (char* target_directory){}
 
 
