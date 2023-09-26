@@ -10,8 +10,7 @@
 
 
     
-int search_file (char* lz4_directory, char* file_format);
-void collect_data (char* source_directory);
-void compress_data (char* target_directory);
+int search_file (char* lz4_directory,char* file_format);
+void collect_and_compress_data (char* source_directory,char* target_directory);
 
 #endif /* HELPER_H_ */

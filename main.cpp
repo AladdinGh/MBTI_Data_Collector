@@ -45,11 +45,8 @@ int main(int argv , char *argc[]) {
 		}
 	}
 
-	// get all the data in the source directory
-	collect_data(argc[3]); 
+	// get all the data in the source directory and compress it to source
+	collect_and_compress_data(argc[3],argc[4]);
 
-	// compress data
-	compress_data(argc[4]); 
 
-	return 0;
 }

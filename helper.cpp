@@ -17,8 +17,7 @@ namespace fs = std::experimental::filesystem;
 int search_file (char* lz4_directory, char* file_format)
 {
     // traverse the directory
-    std::string path;
-    int result; 
+    std::string path; // to replace with lz4_directory
     path = "/home/aladdin/Desktop/BMTI_aufgabe"; //lz4_directory 
 
     // Define a regular expression pattern to match the desired file format
@@ -36,9 +35,7 @@ int search_file (char* lz4_directory, char* file_format)
     // auto &p is loop variable
     for (auto & p: fs::recursive_directory_iterator(path))
     {
-        //std::string filename = entry.path().filename().string();
         if (std::regex_match(p.path().filename().string(),file_pattern))
-        //if (p.path().filename() == fs::path(term)) // fs::is_regular_file(p) &&
         {
             std::cout << "file " << p.path().filename() << "found" << std::endl ; 
             return(1); 
@@ -50,12 +47,29 @@ int search_file (char* lz4_directory, char* file_format)
 
 
 
-void collect_data (char* source_directory)
+void collect_and_compress_data (char* source_directory,char* target_directory)
 {
-    path = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect"; //source_directory 
-    std::system("ls -l >test.txt");
+    std::string source = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect"; //source_directory 
+    std::string target = "/home/aladdin/Desktop/";
+    std::string tar_name = "data_to_collect.tar"; 
+    
+    std::string command; 
+    
+    command.append("tar -cf "); 
+    command.append(target);
+    command.append(tar_name);
+    command.append(" ");
+    command.append(source);
+
+    std::cout << command << std::endl;
+    //tar -cf/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect/data_to_collect.tar data_to_collect
+    std::system(command.c_str());
+    
+
+    //delete(source);
+
 }
-void compress_data (char* target_directory){}
+
 
 
 
