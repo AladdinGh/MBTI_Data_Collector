@@ -16,8 +16,8 @@ namespace fs = std::experimental::filesystem;
 int search_file (char* lz4_directory)
 {
     // traverse the directory
-    std::string path; // to replace with lz4_directory
-    path = "/home/aladdin/Desktop/BMTI_aufgabe"; //lz4_directory 
+    //std::string path; // to replace with lz4_directory
+    //path = "/home/aladdin/Desktop/BMTI_aufgabe"; //lz4_directory 
 
     // Define a regular expression pattern to match the desired file format
     std::regex file_pattern("core\\.[A-Za-z]+\\.[0-9A-Fa-f]+(\\.[0-9A-Fa-f]+)*\\.lz4");
@@ -32,7 +32,7 @@ int search_file (char* lz4_directory)
     */
 
     // auto &p is loop variable
-    for (auto & p: fs::recursive_directory_iterator(path))
+    for (auto & p: fs::recursive_directory_iterator((std::string)lz4_directory))
     {
         if (std::regex_match(p.path().filename().string(),file_pattern))
         {
@@ -53,11 +53,11 @@ int search_file (char* lz4_directory)
 std::vector<std::string> collect_data (char * data_to_compress_path)
 {   
     // to be replaced with cmd arg
-    std::string data_to_compress_path__ = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt" ; 
+    //std::string data_to_compress_path__ = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt" ; 
     std::vector<std::string> data_vector; 
 
     std::ifstream inputFile;
-    inputFile.open(data_to_compress_path__.c_str()); 
+    inputFile.open(data_to_compress_path); 
 
     if (!inputFile.is_open()) 
     {
@@ -90,7 +90,7 @@ std::vector<std::string> collect_data (char * data_to_compress_path)
  */
 void compress_data (std::vector<std::string> data_vector, char * target_directory)
 {
-    std::string target = "/home/aladdin/Desktop/BMTI_aufgabe/special_folder/";
+    //std::string target = "/home/aladdin/Desktop/BMTI_aufgabe/special_folder/";
 
     std::string command; // command to be executed with system call
     std::vector<std::string>::iterator it; 
@@ -98,7 +98,7 @@ void compress_data (std::vector<std::string> data_vector, char * target_director
     
     // constructing the commando string
     command.append("tar -cf "); // -cf create file
-    command.append(target); // tar -cf target_path/
+    command.append((std::string)target_directory); // tar -cf target_path/
     std::string tar_name = get_uniqueId(); 
     command.append(tar_name); // tar -cf target_path/tar_name
     command.append(" "); // tar -cf target_path/tar_name
@@ -117,7 +117,7 @@ void compress_data (std::vector<std::string> data_vector, char * target_director
     return_code = std::system(command.c_str());
     if (0 == return_code)
     {
-        std::clog << "data compressed, file " << tar_name << " is created in the " << target << " directory" << std::endl; 
+        std::clog << "data compressed, file " << tar_name << " is created in the " << (std::string)target_directory << " directory" << std::endl; 
     }
     else 
     {
