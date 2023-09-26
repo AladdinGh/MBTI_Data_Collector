@@ -5,4 +5,3 @@ helper.cpp
 helper.h
 main
 main.cpp
-tftz

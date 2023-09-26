@@ -91,8 +91,7 @@ std::vector<std::string> collect_data (char * data_to_compress_path)
 void compress_data (std::vector<std::string> data_vector, char * target_directory)
 {
     std::string target = "/home/aladdin/Desktop/BMTI_aufgabe/special_folder/";
-    std::string tar_name = "data_to_collect.tar"; 
-    
+
     std::string command; // command to be executed with system call
     std::vector<std::string>::iterator it; 
     int return_code; // retuen code of the system call
@@ -100,6 +99,7 @@ void compress_data (std::vector<std::string> data_vector, char * target_director
     // constructing the commando string
     command.append("tar -cf "); // -cf create file
     command.append(target); // tar -cf target_path/
+    std::string tar_name = get_uniqueId(); 
     command.append(tar_name); // tar -cf target_path/tar_name
     command.append(" "); // tar -cf target_path/tar_name
 
@@ -124,6 +124,19 @@ void compress_data (std::vector<std::string> data_vector, char * target_director
         std::clog << "please verify the list of documents to be compressed" << std::endl ; 
         std::clog << ".tar file is created but with missing files" << std::endl ; 
     }
+}
+
+std::string get_uniqueId()
+{
+    std::time_t currentTime = std::time(nullptr);
+    std::tm* timeInfo = std::localtime(&currentTime);
+    std::ostringstream oss;
+    oss << std::put_time(timeInfo, "%Y%m%d%H%M%S");
+
+    // Create the unique filename
+    std::string uniqueFilename = "data_to_collect_" + oss.str() + ".tar"; 
+
+    return(uniqueFilename); 
 }
 
 
