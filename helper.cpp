@@ -66,7 +66,7 @@ std::vector<std::string> collect_data (char * data_to_compress_path)
     }
     else 
     {
-        std::clog << "triggering data collection ..." << std::endl ; 
+        std::clog << "Tiggering data collection ..." << std::endl ; 
     }
 
     // iterate over the lines and save them in the data_vector 
@@ -77,7 +77,7 @@ std::vector<std::string> collect_data (char * data_to_compress_path)
     }
 
     inputFile.close();
-    std::clog << "data collected" << std::endl ;
+    std::clog << "Data collected" << std::endl ;
 
     return data_vector;
 }
@@ -111,17 +111,17 @@ void compress_data (std::vector<std::string> data_vector, char * target_director
     // tar -cf target_path/tar_name file1 file 2 ...
 
     std::clog << command << std::endl;
-    std::clog << "compressing data ..." << std::endl; 
+    std::clog << "Compressing data ..." << std::endl; 
 
 
     return_code = std::system(command.c_str());
     if (0 == return_code)
     {
-        std::clog << "data compressed, file " << tar_name << " is created in the " << (std::string)target_directory << " directory" << std::endl; 
+        std::clog << "Data compressed, file " << tar_name << " is created in the " << (std::string)target_directory << " directory" << std::endl; 
     }
     else 
     {
-        std::clog << "please verify the list of documents to be compressed" << std::endl ; 
+        std::clog << "Please verify the list of documents to be compressed" << std::endl ; 
         std::clog << ".tar file is created but with missing files" << std::endl ; 
     }
 }
@@ -134,7 +134,7 @@ std::string get_uniqueId()
     oss << std::put_time(timeInfo, "%Y%m%d%H%M%S");
 
     // Create the unique filename
-    std::string uniqueFilename = "data_to_collect_" + oss.str() + ".tar"; 
+    std::string uniqueFilename = "Data_to_collect_" + oss.str() + ".tar"; 
 
     return(uniqueFilename); 
 }
