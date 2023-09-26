@@ -1,9 +1,0 @@
-total 1900
--rw-rw-r-- 1 aladdin aladdin       0 Sep 25 13:12 core.ServiceName.3057.57dd721409bc4ab4b38a3c33a36a608a.3717.1647975805000000.lz4
--rw-rw-r-- 1 aladdin aladdin       0 Sep 25 13:12 core.ServiceName.3057.lz4
-drwxrwxr-x 3 aladdin aladdin    4096 Sep 25 14:05 data_to_collect
--rw-rw-r-- 1 aladdin aladdin    1943 Sep 25 15:45 helper.cpp
--rw-rw-r-- 1 aladdin aladdin     280 Sep 25 15:44 helper.h
--rwxrwxr-x 1 aladdin aladdin 1925792 Sep 25 15:45 main
--rw-rw-r-- 1 aladdin aladdin    1055 Sep 25 15:44 main.cpp
--rw-rw-r-- 1 aladdin aladdin       0 Sep 25 15:45 test.txt

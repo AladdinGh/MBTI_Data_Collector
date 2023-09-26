@@ -13,9 +13,8 @@
 /*/
 Assumptions :
 	arg1 lz4 directory
-	arg2 format file name
-	arg3 source directory
-	arg4 destination directory
+	arg2 data to compress file
+	arg3 target directory
 
 */
 
@@ -33,7 +32,7 @@ int main(int argv , char *argc[]) {
 
 	while (true)
 	{
-		if (1 == search_file(argc[1], argc[2]))
+		if (1 == search_file(argc[1]))
 		{
 			// file found, breakup the loop
 			break;
@@ -45,8 +44,13 @@ int main(int argv , char *argc[]) {
 		}
 	}
 
-	// get all the data in the source directory and compress it to source
-	collect_and_compress_data(argc[3],argc[4]);
+	// retrieve data-to-be-compressed from a file specified in the arg list
+	std::vector<std::string> data_vector; 
+	data_vector = collect_data(argc[2]);
+	
+
+	// compress it into a .tar file
+	compress_data(data_vector,argc[3]);
 
 
 }

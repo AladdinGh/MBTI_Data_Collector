@@ -1,20 +1,19 @@
 #include "helper.h"
-#include <string>
 #include <iostream>
 #include <experimental/filesystem>
 #include <regex>
+#include <fstream>
 
 
 namespace fs = std::experimental::filesystem; 
 
 /* search_file
  * 
- * @param lz4_directory - Path to search recursively in ("/home", "/etc", ...)
- * @param file_format  - Term to search for ("file.txt", "movie.mkv", ...)
+ * @param lz4_directory - Path to search recursively 
  *
- * @returns fs path to the file, if found.
+ * @returns 1, if found, 0 if not.
  */
-int search_file (char* lz4_directory, char* file_format)
+int search_file (char* lz4_directory)
 {
     // traverse the directory
     std::string path; // to replace with lz4_directory
@@ -37,7 +36,7 @@ int search_file (char* lz4_directory, char* file_format)
     {
         if (std::regex_match(p.path().filename().string(),file_pattern))
         {
-            std::cout << "file " << p.path().filename() << "found" << std::endl ; 
+            std::clog << "File " << p.path().filename() << "found" << std::endl << std::endl;
             return(1); 
         }
     }
@@ -45,29 +44,86 @@ int search_file (char* lz4_directory, char* file_format)
 
 }
 
+/* collect_data
+ * 
+ * @param data_to_compress_path - Path file of data to compress
+ *
+ * @returns vector of all files and dirs to be compressed 
+ */
+std::vector<std::string> collect_data (char * data_to_compress_path)
+{   
+    // to be replaced with cmd arg
+    std::string data_to_compress_path__ = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt" ; 
+    std::vector<std::string> data_vector; 
 
+    std::ifstream inputFile;
+    inputFile.open(data_to_compress_path__.c_str()); 
 
-void collect_and_compress_data (char* source_directory,char* target_directory)
+    if (!inputFile.is_open()) 
+    {
+        std::cerr << "Error: Could not open the file." << std::endl;
+        // no files found, vector will be empty and returned empty 
+    }
+    else 
+    {
+        std::clog << "triggering data collection ..." << std::endl ; 
+    }
+
+    // iterate over the lines and save them in the data_vector 
+    std::string line;
+    while (std::getline(inputFile, line)) 
+    {
+        data_vector.push_back(line);  
+    }
+
+    inputFile.close();
+    std::clog << "data collected" << std::endl ;
+
+    return data_vector;
+}
+
+/* compress_data
+ * 
+ * @param target_directory - Path of tar file
+ *
+ * @returns nothing
+ */
+void compress_data (std::vector<std::string> data_vector, char * target_directory)
 {
-    std::string source = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect"; //source_directory 
-    std::string target = "/home/aladdin/Desktop/";
+    std::string target = "/home/aladdin/Desktop/BMTI_aufgabe/special_folder/";
     std::string tar_name = "data_to_collect.tar"; 
     
-    std::string command; 
+    std::string command; // command to be executed with system call
+    std::vector<std::string>::iterator it; 
+    int return_code; // retuen code of the system call
     
-    command.append("tar -cf "); 
-    command.append(target);
-    command.append(tar_name);
-    command.append(" ");
-    command.append(source);
+    // constructing the commando string
+    command.append("tar -cf "); // -cf create file
+    command.append(target); // tar -cf target_path/
+    command.append(tar_name); // tar -cf target_path/tar_name
+    command.append(" "); // tar -cf target_path/tar_name
 
-    std::cout << command << std::endl;
-    //tar -cf/home/aladdin/Desktop/BMTI_aufgabe/data_to_collect/data_to_collect.tar data_to_collect
-    std::system(command.c_str());
-    
+    for (it = data_vector.begin(); it != data_vector.end(); it++ )
+    {
+        command.append(*it);
+        command.append(" ");
+    }
+    // tar -cf target_path/tar_name file1 file 2 ...
 
-    //delete(source);
+    std::clog << command << std::endl;
+    std::clog << "compressing data ..." << std::endl; 
 
+
+    return_code = std::system(command.c_str());
+    if (0 == return_code)
+    {
+        std::clog << "data compressed, file " << tar_name << " is created in the " << target << " directory" << std::endl; 
+    }
+    else 
+    {
+        std::clog << "please verify the list of documents to be compressed" << std::endl ; 
+        std::clog << ".tar file is created but with missing files" << std::endl ; 
+    }
 }
 
 
