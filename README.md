@@ -1,4 +1,7 @@
 # Data collector
 
+Prerequisites : 
 Summary :
-This program 
+How to use :
+Test :
+
