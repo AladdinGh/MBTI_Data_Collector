@@ -1,0 +1,4 @@
+/home/aladdin/Desktop/tests/CMakeFiles/edit_cache.dir
+/home/aladdin/Desktop/tests/CMakeFiles/rebuild_cache.dir
+/home/aladdin/Desktop/tests/CMakeFiles/test.dir
+/home/aladdin/Desktop/tests/CMakeFiles/runTests.dir

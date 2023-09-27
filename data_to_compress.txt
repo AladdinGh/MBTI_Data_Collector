@@ -3,5 +3,4 @@ core.ServiceName.3057.lz4
 data_to_collect
 helper.cpp
 helper.h
-main
 main.cpp

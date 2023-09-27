@@ -27,7 +27,7 @@ int search_file (char * lz4_directory)
     * \\.lz4 matches ".lz4" at the end of the filename.
     */
 
-    if (fs::is_directory(lz4_directory)){ // check if directory is correct
+    if (fs::is_directory(lz4_directory)){
         for (auto & p: fs::recursive_directory_iterator((std::string)lz4_directory)) // auto &p is loop variable
         {
             if (std::regex_match(p.path().filename().string(),file_pattern))
@@ -143,6 +143,7 @@ std::string get_uniqueId()
 
     return(uniqueFilename); 
 }
+
 
 
 

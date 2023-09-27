@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aladdin/Desktop/tests/helper.cpp
+helper.h
+/home/aladdin/Desktop/tests/helper.h
+iostream
+-
+experimental/filesystem
+-
+regex
+-
+fstream
+-
+
+/home/aladdin/Desktop/tests/helper.h
+vector
+-
+string
+-
+ctime
+-
+iomanip
+-
+
+/home/aladdin/Desktop/tests/test.cpp
+helper.h
+/home/aladdin/Desktop/tests/helper.h
+gtest/gtest.h
+-
+
