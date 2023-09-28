@@ -1,7 +1,7 @@
 # Data collector
 
 ***Prerequisites :***
-  * Lunix (as this tool uses system calls to compress files with .tar command, it is not usable on any other platform)
+  * Linux (as this tool uses system calls to compress files with .tar command, it is not usable on any other platform)
   * googletest library  (https://github.com/google/googletest/tree/main)
   * CMake 3.5.1
 
