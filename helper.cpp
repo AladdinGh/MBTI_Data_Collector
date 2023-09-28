@@ -55,8 +55,6 @@ int search_file (char * lz4_directory)
  */
 std::vector<std::string> collect_data (char * data_to_compress_path)
 {   
-    // to be replaced with cmd arg
-    //std::string data_to_compress_path__ = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt" ; 
     std::vector<std::string> data_vector; 
 
     std::ifstream inputFile;
@@ -96,7 +94,7 @@ int compress_data (std::vector<std::string> data_vector, char * target_directory
 {
     std::string command; // command to be executed with system call
     std::vector<std::string>::iterator it; 
-    int return_code; // retuen code of the system call
+    int return_code; // return code of the system call
 
     // constructing the commando string
     command.append("tar -cf "); // -cf create file
