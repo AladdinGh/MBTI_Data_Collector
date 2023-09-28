@@ -2,7 +2,7 @@
 
 ***Prerequisites :***
   * Lunix (as this tool uses system calls to compress files with .tar command, it is not usable on any other platform)
-  * gtest libraray  (https://github.com/google/googletest/tree/main)
+  * googletest library  (https://github.com/google/googletest/tree/main)
   * CMake 3.5.1
 
 ***Summary :*** 
