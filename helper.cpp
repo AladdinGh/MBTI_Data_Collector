@@ -130,6 +130,13 @@ int compress_data (std::vector<std::string> data_vector, char * target_directory
     }
 }
 
+
+/* get_uniqueId : return a unique Id from date for the .tar file
+ * 
+ * @param uniqueFilename
+ *
+ * @returns nothing
+ */
 std::string get_uniqueId()
 {
     std::time_t currentTime = std::time(nullptr);
