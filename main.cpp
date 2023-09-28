@@ -10,24 +10,8 @@
 #include <stdio.h>
 #include "helper.h"
 #include <iostream>
-/*/
-Assumptions :
-	arg1 lz4 directory
-	arg2 data to compress file
-	arg3 target directory
-
-*/
 
 int main(int argv , char *argc[]) {
-
-/*
-	printf("number of argumets is %i \n", argv-1 );
-	for (int i = 0 ; i < argv ; i++)
-	{
-		printf("argument %i is %s \n", i, argc[i]);
-	}
-*/
-
 //loop until the lz4 file is found
 
 	while (true)

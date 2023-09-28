@@ -1,6 +1,0 @@
-total 424
--rw-rw-r-- 1 aladdin aladdin    899 Sep 25 10:23 helper.cpp
--rw-rw-r-- 1 aladdin aladdin    289 Sep 24 20:39 helper.h
--rwxrwxr-x 1 aladdin aladdin 418880 Sep 25 10:24 main
--rw-rw-r-- 1 aladdin aladdin    962 Sep 24 21:13 main.cpp
--rw-rw-r-- 1 aladdin aladdin      0 Sep 25 10:24 test.txt
