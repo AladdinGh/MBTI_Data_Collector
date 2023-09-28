@@ -23,7 +23,7 @@ int main(int argv , char *argc[]) {
 		}
 		else 
 		{
-			std::cout << "not found" << std::endl ;  
+			std::cout << "not found" << std::endl ; 
 		}
 	}
 
@@ -35,5 +35,5 @@ int main(int argv , char *argc[]) {
 	// compress it into a .tar file
 	compress_data(data_vector,argc[3]);
 
-
+    return(1);
 }
