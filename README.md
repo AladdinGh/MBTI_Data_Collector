@@ -25,5 +25,8 @@
 
 
 ***Tests :***<br>
-     * Googletest is used to test this application. In order to execute the tests, run runtests found under /tests.<br>
-     * There are 4 tests : 2 to test the presence of LZ4 file trigger (the case where the user gives a right and wrong paths) and 2 to test the correctness of the data_to_compress.txt file
+     * Googletest is used to test this application. In order to execute the tests, run runtests found under /tests.<br><br>
+
+     * There are 4 tests : 2 to test the presence of LZ4 file trigger (the case where the user gives a right and wrong paths) and 2 to test the correctness of the data_to_compress.txt file. <br><br>
+
+     * if you want to recompile the tests : under /tests build the binary with cmake CMakeLists.txt and then make 
