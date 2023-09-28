@@ -5,7 +5,7 @@
 TEST(Search_file_Test, search_existing_file) { 
 
     /* test what happens if user gives right paths */
-    char * st1 = "/home/aladdin/Desktop/BMTI_aufgabe";
+    char * st1 = "/home/aladdin/Desktop/MBTI_Data_Collector";
     ASSERT_EQ(1, search_file(st1));
 
 }
@@ -13,7 +13,7 @@ TEST(Search_file_Test, search_existing_file) {
 TEST(Search_file_non_existent_Test, search_existing_file) { 
 
     /* test what happens if user gives wrong paths */
-    char * st1 = "/home/aladdin/Desktop/BMTI_aufgaben";
+    char * st1 = "/home/aladdin/Desktop/MBTI_Data_Collectorrr";
     ASSERT_EQ(0, search_file(st1));
 
 }
@@ -29,7 +29,7 @@ TEST(CollectData_full_vector_Test, data_file) {
     result_vector_test.push_back("helper.h");
     result_vector_test.push_back("main.cpp");
     
-    char * st0 = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt";
+    char * st0 = "/home/aladdin/Desktop/MBTI_Data_Collector/data_to_compress.txt";
     ASSERT_EQ(result_vector_test, collect_data(st0));
 
 }
@@ -37,7 +37,7 @@ TEST(CollectData_full_vector_Test, data_file) {
 TEST(CollectData_Test, data_file) { 
     /* test what happens if the data file is not present */
     std::vector<std::string> result_vector_test_empty;
-    char * st1 = "/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txht";
+    char * st1 = "/home/aladdin/Desktop/MBTI_Data_Collector/data_to_compress.txht";
     ASSERT_EQ(result_vector_test_empty,collect_data(st1));
 
 }
