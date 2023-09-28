@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp
+Change Dir: /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7735f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7735f.dir/build.make CMakeFiles/cmTC_7735f.dir/build
-make[1]: Entering directory '/home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7735f.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_7735f.dir/CheckSymbolExists.c.o   -c /home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_7735f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7735f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_7735f.dir/CheckSymbolExists.c.o  -o cmTC_7735f -rdynamic 
-CMakeFiles/cmTC_7735f.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_9048d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9048d.dir/build.make CMakeFiles/cmTC_9048d.dir/build
+make[1]: Entering directory '/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9048d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9048d.dir/CheckSymbolExists.c.o   -c /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9048d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9048d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9048d.dir/CheckSymbolExists.c.o  -o cmTC_9048d -rdynamic 
+CMakeFiles/cmTC_9048d.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7735f.dir/build.make:97: recipe for target 'cmTC_7735f' failed
-make[1]: *** [cmTC_7735f] Error 1
-make[1]: Leaving directory '/home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7735f/fast' failed
-make: *** [cmTC_7735f/fast] Error 2
+CMakeFiles/cmTC_9048d.dir/build.make:97: recipe for target 'cmTC_9048d' failed
+make[1]: *** [cmTC_9048d] Error 1
+make[1]: Leaving directory '/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9048d/fast' failed
+make: *** [cmTC_9048d/fast] Error 2
 
-File /home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp
+Change Dir: /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cc271/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cc271.dir/build.make CMakeFiles/cmTC_cc271.dir/build
-make[1]: Entering directory '/home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cc271.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cc271.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_cc271
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc271.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_cc271.dir/CheckFunctionExists.c.o  -o cmTC_cc271 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_a856c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a856c.dir/build.make CMakeFiles/cmTC_a856c.dir/build
+make[1]: Entering directory '/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a856c.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a856c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a856c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a856c.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a856c.dir/CheckFunctionExists.c.o  -o cmTC_a856c -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_cc271.dir/build.make:97: recipe for target 'cmTC_cc271' failed
-make[1]: *** [cmTC_cc271] Error 1
-make[1]: Leaving directory '/home/aladdin/Desktop/tests/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_cc271/fast' failed
-make: *** [cmTC_cc271/fast] Error 2
+CMakeFiles/cmTC_a856c.dir/build.make:97: recipe for target 'cmTC_a856c' failed
+make[1]: *** [cmTC_a856c] Error 1
+make[1]: Leaving directory '/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a856c/fast' failed
+make: *** [cmTC_a856c/fast] Error 2
 
 

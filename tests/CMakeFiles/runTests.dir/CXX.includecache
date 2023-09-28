@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/aladdin/Desktop/tests/helper.cpp
+/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp
 helper.h
-/home/aladdin/Desktop/tests/helper.h
+/home/aladdin/Desktop/BMTI_aufgabe/helper.h
 iostream
 -
 experimental/filesystem
@@ -18,7 +18,7 @@ regex
 fstream
 -
 
-/home/aladdin/Desktop/tests/helper.h
+/home/aladdin/Desktop/BMTI_aufgabe/helper.h
 vector
 -
 string
@@ -28,9 +28,9 @@ ctime
 iomanip
 -
 
-/home/aladdin/Desktop/tests/test.cpp
-helper.h
-/home/aladdin/Desktop/tests/helper.h
+/home/aladdin/Desktop/BMTI_aufgabe/tests/test.cpp
+../helper.h
+/home/aladdin/Desktop/BMTI_aufgabe/helper.h
 gtest/gtest.h
 -
 

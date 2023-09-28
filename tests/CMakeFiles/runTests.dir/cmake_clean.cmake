@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runTests.dir/test.cpp.o"
-  "CMakeFiles/runTests.dir/helper.cpp.o"
+  "CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o"
   "runTests.pdb"
   "runTests"
 )

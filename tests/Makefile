@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aladdin/Desktop/tests
+CMAKE_SOURCE_DIR = /home/aladdin/Desktop/BMTI_aufgabe/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aladdin/Desktop/tests
+CMAKE_BINARY_DIR = /home/aladdin/Desktop/BMTI_aufgabe/tests
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aladdin/Desktop/tests/CMakeFiles /home/aladdin/Desktop/tests/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aladdin/Desktop/tests/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -134,32 +134,32 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-helper.o: helper.cpp.o
+home/aladdin/Desktop/BMTI_aufgabe/helper.o: home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o
 
-.PHONY : helper.o
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.o
 
 # target to build an object file
-helper.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/helper.cpp.o
-.PHONY : helper.cpp.o
+home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o
 
-helper.i: helper.cpp.i
+home/aladdin/Desktop/BMTI_aufgabe/helper.i: home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i
 
-.PHONY : helper.i
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.i
 
 # target to preprocess a source file
-helper.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/helper.cpp.i
-.PHONY : helper.cpp.i
+home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i
 
-helper.s: helper.cpp.s
+home/aladdin/Desktop/BMTI_aufgabe/helper.s: home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s
 
-.PHONY : helper.s
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.s
 
 # target to generate assembly for a file
-helper.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/helper.cpp.s
-.PHONY : helper.cpp.s
+home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s
+.PHONY : home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s
 
 test.o: test.cpp.o
 
@@ -198,9 +198,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... runTests"
-	@echo "... helper.o"
-	@echo "... helper.i"
-	@echo "... helper.s"
+	@echo "... home/aladdin/Desktop/BMTI_aufgabe/helper.o"
+	@echo "... home/aladdin/Desktop/BMTI_aufgabe/helper.i"
+	@echo "... home/aladdin/Desktop/BMTI_aufgabe/helper.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=gnu++11   CMakeFiles/runTests.dir/test.cpp.o CMakeFiles/runTests.dir/helper.cpp.o  -o runTests -rdynamic /usr/lib/libgtest_main.a -lpthread -lstdc++fs /usr/lib/libgtest.a -lpthread 
+/usr/bin/c++    -std=gnu++11   CMakeFiles/runTests.dir/test.cpp.o CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o  -o runTests -rdynamic /usr/lib/libgtest_main.a -lpthread -lstdc++fs /usr/lib/libgtest.a -lpthread 

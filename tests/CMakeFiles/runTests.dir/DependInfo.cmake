@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aladdin/Desktop/tests/helper.cpp" "/home/aladdin/Desktop/tests/CMakeFiles/runTests.dir/helper.cpp.o"
-  "/home/aladdin/Desktop/tests/test.cpp" "/home/aladdin/Desktop/tests/CMakeFiles/runTests.dir/test.cpp.o"
+  "/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp" "/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o"
+  "/home/aladdin/Desktop/BMTI_aufgabe/tests/test.cpp" "/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/runTests.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -11,8 +11,8 @@ include_directories(${GTEST_INCLUDE_DIRS})
 enable_testing()
 
 set(files
-    helper.h 
-    helper.cpp 
+    ../helper.h 
+    ../helper.cpp 
     )
 
 # Link runTests with what we want to test and the GTest and pthread library

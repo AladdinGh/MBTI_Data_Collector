@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aladdin/Desktop/tests
+CMAKE_SOURCE_DIR = /home/aladdin/Desktop/BMTI_aufgabe/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aladdin/Desktop/tests
+CMAKE_BINARY_DIR = /home/aladdin/Desktop/BMTI_aufgabe/tests
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runTests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/runTests.dir/flags.make
 
 CMakeFiles/runTests.dir/test.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/test.cpp.o: test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aladdin/Desktop/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/test.cpp.o -c /home/aladdin/Desktop/tests/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/test.cpp.o -c /home/aladdin/Desktop/BMTI_aufgabe/tests/test.cpp
 
 CMakeFiles/runTests.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aladdin/Desktop/tests/test.cpp > CMakeFiles/runTests.dir/test.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aladdin/Desktop/BMTI_aufgabe/tests/test.cpp > CMakeFiles/runTests.dir/test.cpp.i
 
 CMakeFiles/runTests.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aladdin/Desktop/tests/test.cpp -o CMakeFiles/runTests.dir/test.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aladdin/Desktop/BMTI_aufgabe/tests/test.cpp -o CMakeFiles/runTests.dir/test.cpp.s
 
 CMakeFiles/runTests.dir/test.cpp.o.requires:
 
@@ -81,45 +81,45 @@ CMakeFiles/runTests.dir/test.cpp.o.provides: CMakeFiles/runTests.dir/test.cpp.o.
 CMakeFiles/runTests.dir/test.cpp.o.provides.build: CMakeFiles/runTests.dir/test.cpp.o
 
 
-CMakeFiles/runTests.dir/helper.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/helper.cpp.o: helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aladdin/Desktop/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/helper.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/helper.cpp.o -c /home/aladdin/Desktop/tests/helper.cpp
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o: /home/aladdin/Desktop/BMTI_aufgabe/helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o -c /home/aladdin/Desktop/BMTI_aufgabe/helper.cpp
 
-CMakeFiles/runTests.dir/helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/helper.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aladdin/Desktop/tests/helper.cpp > CMakeFiles/runTests.dir/helper.cpp.i
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aladdin/Desktop/BMTI_aufgabe/helper.cpp > CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.i
 
-CMakeFiles/runTests.dir/helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/helper.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aladdin/Desktop/tests/helper.cpp -o CMakeFiles/runTests.dir/helper.cpp.s
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aladdin/Desktop/BMTI_aufgabe/helper.cpp -o CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.s
 
-CMakeFiles/runTests.dir/helper.cpp.o.requires:
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.requires:
 
-.PHONY : CMakeFiles/runTests.dir/helper.cpp.o.requires
+.PHONY : CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.requires
 
-CMakeFiles/runTests.dir/helper.cpp.o.provides: CMakeFiles/runTests.dir/helper.cpp.o.requires
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/helper.cpp.o.provides.build
-.PHONY : CMakeFiles/runTests.dir/helper.cpp.o.provides
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.provides: CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.provides.build
+.PHONY : CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.provides
 
-CMakeFiles/runTests.dir/helper.cpp.o.provides.build: CMakeFiles/runTests.dir/helper.cpp.o
+CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.provides.build: CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o
 
 
 # Object files for target runTests
 runTests_OBJECTS = \
 "CMakeFiles/runTests.dir/test.cpp.o" \
-"CMakeFiles/runTests.dir/helper.cpp.o"
+"CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
 runTests: CMakeFiles/runTests.dir/test.cpp.o
-runTests: CMakeFiles/runTests.dir/helper.cpp.o
+runTests: CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: /usr/lib/libgtest_main.a
 runTests: /usr/lib/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aladdin/Desktop/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,7 +128,7 @@ CMakeFiles/runTests.dir/build: runTests
 .PHONY : CMakeFiles/runTests.dir/build
 
 CMakeFiles/runTests.dir/requires: CMakeFiles/runTests.dir/test.cpp.o.requires
-CMakeFiles/runTests.dir/requires: CMakeFiles/runTests.dir/helper.cpp.o.requires
+CMakeFiles/runTests.dir/requires: CMakeFiles/runTests.dir/home/aladdin/Desktop/BMTI_aufgabe/helper.cpp.o.requires
 
 .PHONY : CMakeFiles/runTests.dir/requires
 
@@ -137,6 +137,6 @@ CMakeFiles/runTests.dir/clean:
 .PHONY : CMakeFiles/runTests.dir/clean
 
 CMakeFiles/runTests.dir/depend:
-	cd /home/aladdin/Desktop/tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aladdin/Desktop/tests /home/aladdin/Desktop/tests /home/aladdin/Desktop/tests /home/aladdin/Desktop/tests /home/aladdin/Desktop/tests/CMakeFiles/runTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aladdin/Desktop/BMTI_aufgabe/tests && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aladdin/Desktop/BMTI_aufgabe/tests /home/aladdin/Desktop/BMTI_aufgabe/tests /home/aladdin/Desktop/BMTI_aufgabe/tests /home/aladdin/Desktop/BMTI_aufgabe/tests /home/aladdin/Desktop/BMTI_aufgabe/tests/CMakeFiles/runTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/runTests.dir/depend
 

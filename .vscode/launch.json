@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["/home/aladdin/Desktop/BMTI_aufgabe","/home/aladdin/Desktop/BMTI_aufgabe/data_to_compress.txt","/home/aladdin/Desktop/BMTI_aufgabe/where_to_store_tar_file/"],
+            "args": ["/home/aladdin/Desktop/MBTI_Data_Collector","/home/aladdin/Desktop/MBTI_Data_Collector/data_to_compress.txt","/home/aladdin/Desktop/MBTI_Data_Collector/where_to_store_tar_file/"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
