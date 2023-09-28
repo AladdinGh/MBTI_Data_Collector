@@ -23,8 +23,7 @@ int main(int argv , char *argc[]) {
 		}
 		else 
 		{
-			std::cout << "not found" << std::endl ; 
-			break; 
+			std::cout << "not found" << std::endl ;  
 		}
 	}
 
